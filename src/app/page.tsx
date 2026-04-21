@@ -36,17 +36,17 @@ export default function Home() {
         <section className="mx-auto max-w-3xl px-5 pt-16 pb-10 sm:pt-24">
           <div className="mb-10 text-center">
             <h1 className="text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl">
-              <b className="font-extrabold">Bion</b>ic{" "}
-              <b className="font-extrabold">Read</b>ing,{" "}
-              <b className="font-extrabold">str</b>aight{" "}
-              <b className="font-extrabold">fr</b>om{" "}
-              <b className="font-extrabold">yo</b>ur{" "}
-              <b className="font-extrabold">PD</b>Fs.
+              <b className="font-extrabold">Br</b>eeze{" "}
+              <b className="font-extrabold">Re</b>ader &mdash;{" "}
+              <b className="font-extrabold">re</b>ad{" "}
+              <b className="font-extrabold">PD</b>Fs{" "}
+              <b className="font-extrabold">fa</b>ster,{" "}
+              <b className="font-extrabold">effo</b>rtlessly.
             </h1>
             <p className="mx-auto mt-5 max-w-xl text-base text-slate-600 sm:text-lg">
-              Drop in a PDF and get it back with the first few letters of each
-              word bolded &mdash; a pattern that helps many readers move
-              through text faster. Everything runs in your browser.
+              Breeze Reader makes reading effortless by bolding the first few
+              letters of each word &mdash; a simple visual assist that helps
+              your eyes move through text faster.
             </p>
           </div>
 
@@ -116,7 +116,7 @@ export default function Home() {
                 body="Your PDF is parsed on your device with PDF.js. No uploads, no servers, no tracking."
               />
               <Feature
-                title="Readable output"
+                title="Focus-bolded text"
                 body="Bold weights scale with word length so short words stay light and long words stay anchored."
               />
               <Feature

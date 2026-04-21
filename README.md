@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Breeze Reader
 
-## Getting Started
+Breeze Reader makes reading effortless by bolding the first few letters of each word — a simple visual assist that helps your eyes move through text faster. Drop in a PDF and get the focus-bolded output back, ready to read or copy elsewhere.
 
-First, run the development server:
+Built with Next.js 16, TypeScript, Tailwind CSS, and [PDF.js](https://mozilla.github.io/pdf.js/). Everything runs in the browser — **nothing is uploaded**.
+
+## Features
+
+- Drag-and-drop or click-to-upload PDF input (up to 10 MB)
+- Client-side PDF text extraction via PDF.js
+- Focus-bolded output with weights that scale to word length
+- Copy-to-clipboard preserves bold formatting (rich text + plain text)
+- Responsive, clean, light-mode design
+- Friendly error handling for corrupted or image-only PDFs
+
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+The `copy-pdf-worker` script runs automatically before `dev` and `build` to sync the PDF.js worker into `public/`.
 
-To learn more about Next.js, take a look at the following resources:
+## Deploy
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Deploy to Vercel with no configuration. No server-side code, no environment variables.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Privacy
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+PDFs are read and transformed entirely in the browser. They are never sent to a server.

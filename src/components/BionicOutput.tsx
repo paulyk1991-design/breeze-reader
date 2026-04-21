@@ -65,7 +65,7 @@ export default function BionicOutput({ text, fileName, onReset }: Props) {
             {fileName ?? "Converted text"}
           </div>
           <div className="text-xs text-slate-500">
-            {wordCount.toLocaleString()} words &middot; bionic formatted
+            {wordCount.toLocaleString()} words &middot; breeze formatted
           </div>
         </div>
         <div className="flex items-center gap-2">

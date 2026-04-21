@@ -8,30 +8,31 @@ const inter = Inter({
   display: "swap",
 });
 
-const siteUrl = "https://bionic-pdf.vercel.app";
-const title = "Bionic PDF — Read PDFs faster with bionic formatting";
+const siteUrl = "https://breeze-reader.vercel.app";
+const title = "Breeze Reader — Read PDFs faster, effortlessly";
 const description =
-  "Convert any PDF into bionic reading format in seconds. Bold letters guide your eyes through text for faster reading. Runs entirely in your browser — nothing is uploaded.";
+  "Breeze Reader makes reading effortless by bolding the first few letters of each word — a simple visual assist that helps your eyes move through text faster. Runs entirely in your browser, nothing is uploaded.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title,
   description,
-  applicationName: "Bionic PDF",
+  applicationName: "Breeze Reader",
   keywords: [
-    "bionic reading",
-    "pdf",
+    "breeze reader",
+    "pdf reader",
     "speed reading",
+    "focus reading",
     "accessibility",
-    "bionic text",
     "pdf converter",
+    "focus-bolded text",
   ],
-  authors: [{ name: "Bionic PDF" }],
+  authors: [{ name: "Breeze Reader" }],
   openGraph: {
     title,
     description,
     url: siteUrl,
-    siteName: "Bionic PDF",
+    siteName: "Breeze Reader",
     type: "website",
   },
   twitter: {
