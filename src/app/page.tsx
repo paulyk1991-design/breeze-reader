@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useState } from "react";
+import Link from "next/link";
 import PdfDropzone from "@/components/PdfDropzone";
 import BionicOutput from "@/components/BionicOutput";
 import { extractPdfText, PdfExtractionError } from "@/lib/pdf";
@@ -129,9 +130,14 @@ export default function Home() {
       </main>
 
       <footer className="border-t border-slate-200 bg-white">
-        <div className="mx-auto max-w-3xl px-5 py-6 text-center text-xs text-slate-500">
-          Your files are processed entirely in your browser. Nothing is
-          uploaded.
+        <div className="mx-auto flex max-w-3xl flex-col items-center gap-2 px-5 py-6 text-center text-xs text-slate-500 sm:flex-row sm:justify-between">
+          <div>
+            Your files are processed entirely in your browser. Nothing is
+            uploaded.
+          </div>
+          <Link href="/privacy" className="hover:text-slate-900">
+            Privacy Policy
+          </Link>
         </div>
       </footer>
     </>
